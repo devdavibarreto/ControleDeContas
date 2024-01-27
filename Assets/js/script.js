@@ -9,16 +9,10 @@ function criaP(){
     return paragrafo;
 }
 
-// function criaPDoDinheiro(){
-//     const dinheiro = document.createElement('p')
-//     return dinheiro;
-// }
-
-
-
-
 addTarefa.addEventListener('click', function(e){
-    if(!contas.value + isNaN(valor.value)) return alert(" Insira numero valido");
+    if(!contas.value + isNaN(valor.value)){
+     alert(" Insira número valido \n Ou não utilize `,`");
+     return}
     regTarefas(contas.value +  " R$ " + valor.value);
        
    
