@@ -18,9 +18,9 @@ function criaP(){
 
 
 addTarefa.addEventListener('click', function(e){
-    if(!contas.value + !valor.value)return;
+    if(!contas.value + isNaN(valor.value)) return alert(" Insira numero valido");
     regTarefas(contas.value +  " R$ " + valor.value);
-        
+       
    
 });
 
