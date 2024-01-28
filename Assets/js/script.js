@@ -12,7 +12,7 @@ function criaP(){
 
 addTarefa.addEventListener('click', function(e){
     if(!contas.value + isNaN(parseFloat(valor.value))){
-     alert(" Insira número valido \n Ou não utilize `,`");
+     alert(" Insira o nome da conta");
      return}
     regTarefas(contas.value, parseFloat(valor.value));
        
@@ -61,7 +61,7 @@ document.addEventListener('click', function(e){
 
     if (apagar.classList.contains('apagar')){
         const paragrafoConta = apagar.parentElement;
-        const valorConta = parseFloat(paragrafoConta.textContent.split('R$')[1].trim()); // Extrai o valor da conta removida
+        const valorConta = parseFloat(paragrafoConta.textContent.split('R$')[1].trim()); 
         dinheiroTotal = dinheiroTotal.filter(valor => valor !== valorConta); // Remove o valor da conta do array
         paragrafoConta.remove();
         atualizarContas(); // Atualiza o total
