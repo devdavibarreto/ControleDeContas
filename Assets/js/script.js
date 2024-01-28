@@ -3,6 +3,7 @@ const valor = document.querySelector(".valor")
 const addTarefa = document.querySelector(".addtarefa")
 const registroDeContas = document.querySelector(".registrodecontas")
 const total = document.querySelector(".total");
+let dinheiroTotal = []
 
 function criaP(){
     const paragrafo = document.createElement('p')
@@ -10,10 +11,10 @@ function criaP(){
 }
 
 addTarefa.addEventListener('click', function(e){
-    if(!contas.value + isNaN(valor.value)){
+    if(!contas.value + isNaN(parseFloat(valor.value))){
      alert(" Insira número valido \n Ou não utilize `,`");
      return}
-    regTarefas(contas.value +  " R$ " + valor.value);
+    regTarefas(contas.value, parseFloat(valor.value));
        
    
 });
@@ -35,31 +36,37 @@ paragrafo1.appendChild(botaoApagar);}
 function regTarefas(contasInput,valorInput){
     const paragrafo = criaP()
     const paragrafo1 = criaP()
-    paragrafo.innerText = contasInput;
-    paragrafo1.innerHTML = valorInput;
-    registroDeContas.appendChild(paragrafo,paragrafo1);
+    paragrafo.innerText = contasInput + " R$ " + valorInput; 
+    registroDeContas.appendChild(paragrafo);
     LimpaInput()
     criaBotaoApagar(paragrafo)
+    dinheiroTotal.push(valorInput)
     atualizarContas()
-}
 
+    
+}
+function atualizarContas(){
+    let soma =0;
+   
+    for (let valor of dinheiroTotal ){
+       soma += valor ;
+       
+    }
+    total.textContent = "Total: R$" + soma.toFixed(2)
+    console.log(dinheiroTotal)
+   }
+   
 document.addEventListener('click', function(e){
     const apagar = e.target;
 
     if (apagar.classList.contains('apagar')){
-        apagar.parentElement.remove();
-        atualizarContas();
+        const paragrafoConta = apagar.parentElement;
+        const valorConta = parseFloat(paragrafoConta.textContent.split('R$')[1].trim()); // Extrai o valor da conta removida
+        dinheiroTotal = dinheiroTotal.filter(valor => valor !== valorConta); // Remove o valor da conta do array
+        paragrafoConta.remove();
+        atualizarContas(); // Atualiza o total
     }
-})
+});
 
-function atualizarContas(){
-    const paragrafosComContas = registroDeContas.querySelectorAll('p');
-    const listaDeContas= []
 
-    for (let registroDeContas  of paragrafosComContas){
-        let  contas = registroDeContas.innerText;
-        contas = contas.replace('Apagar', '').trim()
-        listaDeContas.push(registroDeContas)
-    }
-}
 
