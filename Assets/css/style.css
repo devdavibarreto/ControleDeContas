@@ -72,7 +72,7 @@
         border-radius: 3rem;
         padding-left: var(--gap);
         padding-top: var(--gap);
-        text-transform: lowercase;
+        text-transform: uppercase;
         font-size: 3rem;
         color: black;
         
