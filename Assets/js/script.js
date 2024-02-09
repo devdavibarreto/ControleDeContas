@@ -57,8 +57,7 @@ const atualizarContas =() =>{
    }
    
 document.addEventListener('click', function(e){
-    const apagar = e.target;
-
+    const apagar = e.target; //Resumindo onde eu clicar ele vai ta capturando esse evento e se eu clicar no botão que tenha o classlist apagar ele ira fazer a função a baixo
     if (apagar.classList.contains('apagar')){
         const paragrafoConta = apagar.parentElement;
         const valorConta = parseFloat(paragrafoConta.textContent.split('R$')[1].trim()); 
