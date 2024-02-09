@@ -5,7 +5,7 @@ const registroDeContas = document.querySelector(".registrodecontas")
 const total = document.querySelector(".total");
 let dinheiroTotal = []
 
-function criaP(){
+const  criaP=()=>{
     const paragrafo = document.createElement('p')
     return paragrafo;
 }
@@ -19,13 +19,13 @@ addTarefa.addEventListener('click', function(e){
    
 });
 
-function LimpaInput(){ // Para limpar o input e volta o foco pra ele
+const LimpaInput = ()=>{ // Para limpar o input e volta o foco pra ele
     contas.value = ''; //limpar
     valor.value = '';
     contas.focus(); //Voltar o foco pra ele
 }
 
-function criaBotaoApagar(paragrafo1){ // Recebe o li
+const criaBotaoApagar = (paragrafo1) =>{ // Recebe o li
     paragrafo1.innerText += ' ' // Para da um espaço
 const botaoApagar = document.createElement('button');
 botaoApagar.innerText= 'Apagar' ; //Criando o botão
@@ -33,9 +33,9 @@ botaoApagar.setAttribute('class', 'apagar') // Definir a classe e depois o nome 
 botaoApagar.setAttribute('title', 'apagar esta tarefa')
 paragrafo1.appendChild(botaoApagar);}
 
-function regTarefas(contasInput,valorInput){
+const regTarefas = (contasInput,valorInput) =>{
     const paragrafo = criaP()
-    const paragrafo1 = criaP()
+    
     paragrafo.innerText = contasInput + " R$ " + valorInput; 
     registroDeContas.appendChild(paragrafo);
     LimpaInput()
@@ -45,7 +45,7 @@ function regTarefas(contasInput,valorInput){
 
     
 }
-function atualizarContas(){
+const atualizarContas =() =>{
     let soma =0;
    
     for (let valor of dinheiroTotal ){
