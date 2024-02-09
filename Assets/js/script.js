@@ -11,9 +11,13 @@ const  criaP=()=>{
 }
 
 addTarefa.addEventListener('click', function(e){
-    if(!contas.value + isNaN(parseFloat(valor.value))){
+    if(!contas.value ){
      alert(" Insira o nome da conta");
      return}
+     if (!Number(parseFloat(valor.value))){
+        alert(" Insira um valor valido")
+        return
+     } 
     regTarefas(contas.value, parseFloat(valor.value));
        
    
