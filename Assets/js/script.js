@@ -23,6 +23,21 @@ addTarefa.addEventListener('click', function(e){
    
 });
 
+document.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13){
+        if(!contas.value ){
+            alert(" Insira o nome da conta");
+            return}
+            if (!Number(parseFloat(valor.value))){
+               alert(" Insira um valor valido")
+               return
+            } 
+           regTarefas(contas.value, parseFloat(valor.value));
+              
+        }       
+       
+    });
+
 const LimpaInput = ()=>{ // Para limpar o input e volta o foco pra ele
     contas.value = ''; //limpar
     valor.value = '';
@@ -55,7 +70,7 @@ const atualizarContas =() =>{
     for (let valor of dinheiroTotal ){
        soma += valor ;
        
-    }
+    }                   
     total.textContent = "Total: R$" + soma.toFixed(2)
     console.log(dinheiroTotal)
    }
@@ -70,6 +85,29 @@ document.addEventListener('click', function(e){
         atualizarContas(); // Atualiza o total
     }
 });
+
+
+
+
+// Dark mode
+
+const mode = document.getElementById('mode_icon')
+
+mode.addEventListener('click',()=>{
+  const geral =  document.querySelector('#white')
+  if(mode.classList.contains('fa-moon')){
+    mode.classList.remove('fa-moon')
+    mode.classList.add('fa-sun')
+    geral.classList.add('darkmode')
+  }else if(mode.classList.contains('fa-sun')){
+    mode.classList.remove('fa-sun')
+    mode.classList.add('fa-moon')
+    geral.classList.remove('darkmode')
+  }
+});
+
+
+
 
 
 

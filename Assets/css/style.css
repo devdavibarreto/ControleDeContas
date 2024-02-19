@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 .titulo{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+        font-weight: 700;
     }
     .org-sup{
         display: flex;
@@ -12,6 +15,8 @@
         margin-top: 2rem;
         float: left;
         margin-top: 10rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
     }
     .pesquisas{
         display: flex;
@@ -57,23 +62,111 @@
        position: relative;
         z-index: 1;
         left: 40rem;
+        border-radius: 2rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        background-color: rgba(255, 255, 255, 0.137)
     }
     
     .total-valor{
         font-size: 2rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        
     }
     
     .registrodecontas{
         margin-top: 10rem;
-        background-color: white;
+        background-image: linear-gradient(to right top, #ffffff11, #00c1ec33, #01e1ff41, #ffffff36, #ffffff1a);
         min-height:  60rem;
         max-height: auto;
-        width: 100rem;
-        border-radius: 3rem;
+        width: 110vh;
+        border-radius: 2rem;
         padding-left: var(--gap);
         padding-top: var(--gap);
         text-transform: uppercase;
         font-size: 3rem;
-        color: black;
+        color: rgb(0, 0, 5);
+        box-shadow: 1rem 1rem 25rem 0.5rem rgba(255, 255, 255, 0.774);
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
         
     }
+
+
+    .fa-solid {
+        align-items: center;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        box-shadow: 1rem 1rem 25rem 0.5rem rgba(255, 255, 255, 255);
+        
+      }
+    
+      .darkmode#white{
+        background-image: linear-gradient(to right top, #010792, #000582, #000373, #000264, #000055);
+      }
+
+      .darkmode .registrodecontas{
+        margin-top: 10rem;
+        background-image: linear-gradient(to right top, #0e000011, #00000033, #00050541, #140000be, #0800001a);
+        color: rgb(255, 255, 255);
+        box-shadow: 1rem 1rem 25rem 0.5rem rgba(98, 0, 255, 0.774);
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        animation:  example 1s ease-in-out;
+        
+    }
+
+    .apagar{
+        color: rgb(255, 0, 0);
+        width: 1rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+    }
+    .apagar:hover{
+
+        color: rgb(255, 255, 255);
+        
+    }
+
+    @keyframes example {
+        from {color: rgb(255, 255, 255);}
+        to {color: rgb(0, 119, 255);}
+      }
+
+      .darkmode h1{
+color: white;
+      }
+      .darkmode .valor-total h1{
+        color: rgb(255, 255, 255);
+              }
+
+              .darkmode .valor-total{
+                color: white;
+              }
+
+      .darkmode .pesquisas{
+        color: white;
+              }
+
+              .darkmode .pesquisas1{
+                color: white;
+                      }
+
+
+
+                      input::placeholder {
+                        color: #2a078b; /* Cor do placeholder desejada */
+                        
+                    }
+
+                    .darkmode input::placeholder{
+                        color: rgb(255, 255, 255);
+                    }
+
+                    input{
+                        border-radius: 1rem;
+                        border-color: #0004ff3b;
+                        text-align: center;
+                        background-color: rgba(255, 255, 255, 0.137);
+                    }
