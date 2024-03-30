@@ -15,7 +15,7 @@ html{
 
 #white{
     height: 100vh;
-    background-image: linear-gradient(to right top, #b3b4b9, #a7b5c9, #8eb8d7, #65bde0, #02c3e0);
+    background-image: url(../img/white-background.svg);
     max-width: 120rem;
     margin: 0 auto; /* Margins automaticas para esquerda e direita o navegador vai calcular automaticamente */
     padding-left: var(--gap);
