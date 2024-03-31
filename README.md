@@ -28,4 +28,14 @@ Bom, na segunda versão, com o avanço dos estudos, o projeto foi mudado totalme
 
 <h1><strong >Versão 3 </strong></h1>
 
-<strong > "Modo noite"</strong>
+<strong > "VERSÃO 3.0"</strong>
+
+Design Responsivo: O design do aplicativo foi completamente repaginado para ser totalmente responsivo, oferecendo uma experiência consistente em todos os dispositivos, desde desktops até dispositivos móveis.
+
+Aprimoramentos do Modo Escuro/Claro: Fiz ajustes na coloração e no contraste do modo escuro e claro.
+
+Adoção de ES6 Modules: Estou  utilizando módulos ES6 (ECMAScript 6) em todo o  código JS. permitindo  organizar o código de forma mais modular e reutilizável, facilitando a manutenção e o desenvolvimento de funcionalidades dentro do página.
+
+![modo claro](image.png)
+
+![modo escuro](image-1.png)
