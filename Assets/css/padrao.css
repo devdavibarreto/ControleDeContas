@@ -10,17 +10,24 @@
 
 html{
     font-size: 62.5%;
+  
    
 }
 
 #white{
-    height: 100vh;
+    height: 100%;
     background-image: url(../img/white-background.svg);
     max-width: 120rem;
     margin: 0 auto; /* Margins automaticas para esquerda e direita o navegador vai calcular automaticamente */
     padding-left: var(--gap);
     padding-right: var(--gap);
-    margin: 0 auto;
     min-height: 100vh;
+    background-size: cover; 
+    background-position: center  ; 
+    background-repeat: no-repeat;
+
+    
     
 }
+
+

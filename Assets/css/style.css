@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+
 .titulo {
     display: flex;
     align-items: center;
@@ -9,11 +11,14 @@
 }
 .org-sup {
     display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-left: 20%;
     flex-direction: row;
     gap: var(--gap);
     font-size: 2.4rem;
-    margin-top: 2rem;
     float: left;
+    flex-wrap: wrap;
     margin-top: 10rem;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -48,22 +53,28 @@ button {
     cursor: pointer;
 }
 
+.darkmode .valor-total {
+    color: rgb(5, 0, 0);
+    border-radius: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    background-color: rgba(36, 43, 37, 0.863);
+}
+
 .valor-total {
-    background-color: white;
-    color: black;
+    color: rgb(5, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 15rem;
     height: 10rem;
-    position: relative;
+
     z-index: 1;
-    left: 40rem;
     border-radius: 2rem;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
-    background-color: rgba(255, 255, 255, 0.137);
+    background-color: rgba(1, 255, 35, 0.863);
 }
 
 .total-valor {
@@ -73,23 +84,56 @@ button {
 }
 
 .registrodecontas {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 128, 0, 0.247);
     margin-top: 10rem;
-    background-image: linear-gradient(to right top, #ffffff11, #00c1ec33, #01e1ff41, #ffffff36, #ffffff1a);
-    min-height: 60rem;
-    max-height: auto;
-    width: 110vh;
+    height: auto;
+    width: 50%;
+    margin-left: 20%;
+
     border-radius: 2rem;
+    box-shadow: 1rem 1rem 25rem 0.5rem rgba(255, 255, 255, 0.774);
+
+    
+    color: rgb(255, 255, 255);
+    
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
     padding-left: var(--gap);
     padding-top: var(--gap);
     text-transform: uppercase;
-    font-size: 3rem;
-    color: rgb(0, 0, 5);
-    box-shadow: 1rem 1rem 25rem 0.5rem rgba(255, 255, 255, 0.774);
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
+    overflow: auto;
 }
 
 .fa-solid {
+    background-color: rgba(0, 255, 34, 0.493);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+    width: 2rem;
+border-radius: 100%;
+    height: 2rem;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 1rem 1rem 25rem 0.5rem rgba(255, 255, 255, 255);
+}
+
+.darkmode .fa-solid {
+    background-color: rgba(55, 0, 255, 0.493);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+    width: 2rem;
+border-radius: 100%;
+    height: 2rem;
     align-items: center;
     font-size: 2rem;
     color: rgb(255, 255, 255);
@@ -98,12 +142,15 @@ button {
 
 .darkmode#white {
     background-image: url(../img/darkbackground.svg);
+     background-size: cover; 
+    background-position: center ; 
+    background-repeat: no-repeat;
 }
 
 .darkmode .registrodecontas {
     margin-top: 10rem;
     background-image: linear-gradient(to right top, #0e000011, #00000033, #00050541, #140000be, #0800001a);
-    color: rgb(255, 255, 255);
+    color: rgb(3, 199, 248);
     box-shadow: 1rem 1rem 25rem 0.5rem rgba(98, 0, 255, 0.774);
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -111,13 +158,14 @@ button {
 }
 
 .apagar {
-    color: rgb(255, 0, 0);
-    width: 1rem;
+   background-color: red;
+   color: white;
+   border-radius: 1rem;
     font-family: "Oswald", sans-serif;
-    font-weight: 700;
+    font-weight: 700; 
 }
 .apagar:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 @keyframes example {
@@ -162,3 +210,12 @@ input {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.137);
 }
+
+.darkmode input {
+ color: white;
+}
+
+
+    @media screen and (max-width: 378px) {
+
+      }
