@@ -5,10 +5,10 @@ const registroDeContas = document.querySelector(".registrodecontas")
 const total = document.querySelector(".total");
 let dinheiroTotal = []
 
-const  criaP=()=>{
-    const paragrafo = document.createElement('p')
-    return paragrafo;
-}
+
+import criaP from "../js/criap.js";
+import { mode } from "./darkmode.js";  // esta funcionando
+
 
 addTarefa.addEventListener('click', function(e){
     if(!contas.value ){
@@ -72,7 +72,7 @@ const atualizarContas =() =>{
        
     }                   
     total.textContent = "Total: R$" + soma.toFixed(2)
-    console.log(dinheiroTotal)
+    
    }
    
 document.addEventListener('click', function(e){
@@ -89,22 +89,7 @@ document.addEventListener('click', function(e){
 
 
 
-// Dark mode
 
-const mode = document.getElementById('mode_icon')
-
-mode.addEventListener('click',()=>{
-  const geral =  document.querySelector('#white')
-  if(mode.classList.contains('fa-moon')){
-    mode.classList.remove('fa-moon')
-    mode.classList.add('fa-sun')
-    geral.classList.add('darkmode')
-  }else if(mode.classList.contains('fa-sun')){
-    mode.classList.remove('fa-sun')
-    mode.classList.add('fa-moon')
-    geral.classList.remove('darkmode')
-  }
-});
 
 
 
