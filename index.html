@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,30 +15,33 @@
 
 <body id="white">
     <div id="activethemode">
-    <i id="mode_icon"class="fa-solid fa-moon"></i>
-    <header class="titulo"> <h1>CONTROLE DE CONTAS</h1></header>
-    <div class="org-sup">
-<div class="pesquisas">
-    <label for = "contas">Registro de conta</label>
-    <input type="text" class="contas" placeholder="APENAS LETRAS">
+        <i id="mode_icon" class="fa-solid fa-moon"></i>
+        <header class="titulo">
+            <h1>CONTROLE DE CONTAS</h1>
+        </header>
+        <div class="org-sup">
+            <div class="pesquisas">
+                <label for="contas">Registro de conta</label>
+                <input type="text" class="contas" placeholder="APENAS LETRAS">
 
-</div>
-<div class="pesquisas1">
-    <label for="valor">Valor</label>
-        <input type="text" class="valor" placeholder="APENAS NÚMEROS">
+            </div>
+            <div class="pesquisas1">
+                <label for="valor">Valor</label>
+                <input type="text" class="valor" placeholder="APENAS NÚMEROS">
 
-        
+
+            </div>
+            <button class="addtarefa"> <img src="./Assets/img/Mais.svg"></button>
+            <section class="valor-total">
+                <h1 class="total-valor">Valor total</h1>
+                <p class="total-valor total">R$ 00.000,00</p>
+            </section>
+        </div>
+
+
+        <div class="registrodecontas"></div>
     </div>
-    <button class="addtarefa"> <img src="./Assets/img/Mais.svg"></button>
-    <section class = "valor-total">
-        <h1 class="total-valor">Valor total</h1>
-        <p class="total-valor total">R$ 00.000,00</p>
-    </section>
-</div>
-
-
-<div class = "registrodecontas"></div>
-</div>
     <script type="module" src="./Assets/js/script.js"></script>
 </body>
+
 </html>

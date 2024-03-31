@@ -1,5 +1,5 @@
 
-export default function  criaP(){
+export default function criaP() {
     const paragrafo = document.createElement('p')
     return paragrafo;
 }

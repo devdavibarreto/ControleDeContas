@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
-
 .titulo {
     display: flex;
     align-items: center;
@@ -13,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   margin-left: 20%;
+    margin-left: 20%;
     flex-direction: row;
     gap: var(--gap);
     font-size: 2.4rem;
@@ -95,9 +94,8 @@ button {
     border-radius: 2rem;
     box-shadow: 1rem 1rem 25rem 0.5rem rgba(255, 255, 255, 0.774);
 
-    
     color: rgb(255, 255, 255);
-    
+
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-size: 3rem;
@@ -116,7 +114,7 @@ button {
     margin-top: 1rem;
     text-align: center;
     width: 2rem;
-border-radius: 100%;
+    border-radius: 100%;
     height: 2rem;
     align-items: center;
     font-size: 2rem;
@@ -132,7 +130,7 @@ border-radius: 100%;
     margin-top: 1rem;
     text-align: center;
     width: 2rem;
-border-radius: 100%;
+    border-radius: 100%;
     height: 2rem;
     align-items: center;
     font-size: 2rem;
@@ -142,8 +140,8 @@ border-radius: 100%;
 
 .darkmode#white {
     background-image: url(../img/darkbackground.svg);
-     background-size: cover; 
-    background-position: center ; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -158,11 +156,11 @@ border-radius: 100%;
 }
 
 .apagar {
-   background-color: red;
-   color: white;
-   border-radius: 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
     font-family: "Oswald", sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
 }
 .apagar:hover {
     color: rgb(0, 0, 0);
@@ -212,7 +210,5 @@ input {
 }
 
 .darkmode input {
- color: white;
+    color: white;
 }
-
-
