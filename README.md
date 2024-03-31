@@ -26,6 +26,6 @@ Bom, na segunda versão, com o avanço dos estudos, o projeto foi mudado totalme
 ![versão noite](https://github.com/DaviBarretto/ControleDeContas/assets/144945784/930d4edf-994b-4db8-ae07-715a36727472)
 
 
-<h1><strong >Versão 3 Em Breve...</strong></h1>
+<h1><strong >Versão 3 </strong></h1>
 
-<strong >Estão preparados ? 😁</strong >
+<strong > "Modo noite"</strong>
